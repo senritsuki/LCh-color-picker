@@ -66,7 +66,7 @@ class LChTable {
     ){
         const l_size = Math.floor(LChTable.LMax / l_step) + 1;
         const c_size = Math.floor(LChTable.CMax / c_step) + 1;
-        const h_size = Math.floor(LChTable.HMax / h_step) + 1;
+        const h_size = Math.floor(LChTable.HMax / h_step);
         const d: Color[][][] = new Array(l_size);
         seq(l_size, 0, l_step).forEach((l, i) => {
             d[i] = new Array(c_size);

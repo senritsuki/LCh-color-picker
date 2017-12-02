@@ -54,7 +54,7 @@ var LChTable = (function () {
         this.h_step = h_step;
         var l_size = Math.floor(LChTable.LMax / l_step) + 1;
         var c_size = Math.floor(LChTable.CMax / c_step) + 1;
-        var h_size = Math.floor(LChTable.HMax / h_step) + 1;
+        var h_size = Math.floor(LChTable.HMax / h_step);
         var d = new Array(l_size);
         seq(l_size, 0, l_step).forEach(function (l, i) {
             d[i] = new Array(c_size);

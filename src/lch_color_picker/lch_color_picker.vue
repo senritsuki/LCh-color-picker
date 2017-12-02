@@ -12,6 +12,9 @@
             circle(v-for="c in colors_lc_mark", :cx="c.x", :cy="c.y", :r="c.r", :fill="c.c.rgbhex", stroke="none")
     el-col(:xs="24", :sm="16", :md="12")
       .box
+        div(:style="{backgroundColor: rgbhex, height: '10px'}")
+    el-col(:xs="24", :sm="16", :md="12")
+      .box
         el-row
           el-col.slider-label(:span="6") Lightness
           el-col(:span="18"): el-slider(v-model="lch_l", :max="100", :step="5", show-input)
@@ -90,14 +93,14 @@
 }
 #lch_color_picker .label {
   font-weight: bold;
-  line-height: 32px;
+  line-height: 30px;
   border-bottom: 1px solid #e6ebf5;
 }
 #lch_color_picker .value {
   text-align: left;
   color: #409eff;
   /*font-family: monospace;*/
-  line-height: 32px;
+  line-height: 30px;
   border-bottom: 1px solid #e6ebf5;
 }
 </style>
